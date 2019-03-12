@@ -27,7 +27,7 @@ if recv1[:3] != '250':
     
 # Send MAIL FROM command and print server response. 
 # Fill in start
-clientSocket.send('MAIL FROM: <yanrayli@gmail.com>\r\n'.encode())
+clientSocket.send('MAIL FROM: <xxxxx@gmail.com>\r\n'.encode())
 recv2 = clientSocket.recv(1024)
 recv2 = recv2.decode()
 print ('From:' + recv2)
@@ -37,7 +37,7 @@ if recv2[:3] != '250': #if the data is not received
  
 # Send RCPT TO command and print server response.  
 # Fill in start 
-clientSocket.send('RCPT TO: yanruii@alumni.ubc.ca> \r\n'.encode())
+clientSocket.send('RCPT TO: xxxxx@alumni.ubc.ca> \r\n'.encode())
 recv3 = clientSocket.recv(1024)
 recv3 = recv3.decode()
 print ('To:' + recv3)
